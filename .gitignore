@@ -1,0 +1,5 @@
+# OpenEdge GitOps — managed config repo
+node_modules/
+.env
+.env.*
+.DS_Store

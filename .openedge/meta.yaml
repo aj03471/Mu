@@ -1,0 +1,9 @@
+apiVersion: openedge.dev/v1
+kind: Meta
+org: u_user_3HsJVZ8ADRO61vdZNrzI0nDVBCS
+name: u_user_3HsJVZ8ADRO61vdZNrzI0nDVBCS
+plan: pro
+region: san-jose
+projectCount: 1
+generatedAt: "2026-08-14T08:27:10.834Z"
+managedBy: OpenEdge GitOps

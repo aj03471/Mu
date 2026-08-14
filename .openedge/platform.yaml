@@ -1,0 +1,14 @@
+apiVersion: openedge.dev/v1
+kind: Platform
+org: u_user_3HsJVZ8ADRO61vdZNrzI0nDVBCS
+enterprise:
+  ipBlocks: []
+  siem:
+    enabled: false
+    format: http
+  saml:
+    enabled: false
+    enforced: false
+  scim:
+    enabled: false
+  microfrontends: []
