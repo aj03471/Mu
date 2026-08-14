@@ -1,0 +1,193 @@
+:root {
+  --wall: #1b1815;
+  --wall-raised: #221e1a;
+  --plaque: #f6f1e6;
+  --plaque-line: #cfc4a8;
+  --brass: #b8923f;
+  --brass-bright: #d9b25f;
+  --ink: #2a241c;
+  --ink-soft: #6f6555;
+  --quiet: #5c8b6e;
+  --moderate: #c99a3c;
+  --busy: #c2703f;
+  --very-busy: #a8422f;
+  --radius: 2px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--wall);
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(255,255,255,0.03), transparent 40%),
+    radial-gradient(circle at 80% 100%, rgba(255,255,255,0.02), transparent 40%);
+  color: var(--plaque);
+  font-family: "Inter", -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.masthead {
+  border-bottom: 1px solid rgba(184, 146, 63, 0.35);
+  padding: 2.5rem 1.5rem 1.75rem;
+}
+
+.masthead-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.brand { display: flex; align-items: flex-start; gap: 0.85rem; }
+
+.brand-mark {
+  color: var(--brass-bright);
+  font-size: 1.1rem;
+  line-height: 1;
+  margin-top: 0.55rem;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 2.1rem;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: var(--plaque);
+}
+
+.tagline {
+  margin: 0.3rem 0 0;
+  color: #a99b7f;
+  font-size: 0.95rem;
+}
+
+.mode-pill {
+  border: 1px solid var(--brass);
+  color: var(--brass-bright);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem 4rem;
+}
+
+.intro p {
+  color: #b9ac8e;
+  max-width: 620px;
+  line-height: 1.55;
+}
+
+.updated {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  color: #756a53;
+}
+
+.board {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--plaque);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.25rem 1.1rem;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border-top: 3px solid var(--brass);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 1.1rem;
+  width: 10px;
+  height: 10px;
+  background: var(--brass-bright);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.35rem 0 0.15rem;
+  line-height: 1.25;
+}
+
+.card .city {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.9rem;
+}
+
+.gauge {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 0.55rem;
+}
+
+.gauge i {
+  flex: 1;
+  height: 7px;
+  background: var(--plaque-line);
+  border-radius: 1px;
+}
+
+.gauge i.on { background: var(--dot-color, var(--brass)); }
+
+.status-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.status-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.status-label.Quiet { color: var(--quiet); }
+.status-label.Moderate { color: var(--moderate); }
+.status-label.Busy { color: var(--busy); }
+.status-label.Very-Busy { color: var(--very-busy); }
+.status-label.Unknown { color: var(--ink-soft); }
+
+.status-score {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+footer {
+  text-align: center;
+  color: #6b6150;
+  font-size: 0.78rem;
+  padding: 2rem 1rem 3rem;
+}
+
+.skeleton {
+  opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.7rem; }
+}

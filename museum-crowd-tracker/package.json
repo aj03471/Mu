@@ -1,0 +1,14 @@
+{
+  "name": "museum-crowd-tracker",
+  "version": "1.0.0",
+  "description": "Tracks how crowded major US museums are, so you know when to go.",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Hours — US Museum Crowd Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <div>
+          <h1>Gallery Hours</h1>
+          <p class="tagline">A live read on how full US museums are right now</p>
+        </div>
+      </div>
+      <div class="mode-pill" id="modePill">checking data source…</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        Museum fatigue starts before you walk in — overcrowded galleries, blocked exhibits, long lines.
+        This board reads current footfall across major US museums so you can pick your moment.
+      </p>
+      <p class="updated" id="updatedAt"></p>
+    </section>
+
+    <section class="board" id="board" aria-live="polite">
+      <!-- Cards injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Built on shadw.cloud · Deploy your own copy from the repo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
