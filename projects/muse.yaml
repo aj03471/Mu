@@ -1,0 +1,17 @@
+apiVersion: openedge.dev/v1
+kind: Project
+org: u_user_3HsJVZ8ADRO61vdZNrzI0nDVBCS
+spec:
+  name: muse
+  framework: auto
+  build:
+    installCommand: ""
+    buildCommand: ""
+    outputDirectory: ""
+  functions:
+    runtime: fluid
+    maxDuration: 300
+    memory: 2048
+    regions:
+      - san-jose
+    failover: false

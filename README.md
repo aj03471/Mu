@@ -16,10 +16,11 @@ project's source repo triggers a new build + deployment.
 | `projects/*.yaml` | One spec file per project |
 | `.github/workflows/openedge-deploy.yml` | CI that triggers OpenEdge on push |
 
-## Projects (2)
+## Projects (3)
 
 - `i-want-to-build-my-first-project-on-shadw-cloud--i-am-not-a-developer--create-the-simplest-useful-web-application-possible--give-me-every-file-i-need--explain-how-to-put-it-in-github--and-walk-me-through-deploying-it-to-shadw-cloud-one-step-at-a-time--do-not-assume-i-know-git--node-js--or-cloud-deployment-i-want-to-build-a-museum-crowd-info-app-`
 - `mu`
+- `muse`
 
 ---
-_Plan: pro · Generated 2026-08-14T08:30:02.482Z_
+_Plan: pro · Generated 2026-08-14T08:31:29.481Z_
